@@ -1,0 +1,47 @@
+pluginManagement {
+//    resolutionStrategy {
+//        eachPlugin {
+//            if (requested.id.namespace == 'org.gradle.sample') {
+//                useModule('org.gradle.sample:sample-plugins:1.0.0')
+//            }
+//        }
+//    }
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url = "https://plugins.gradle.org/m2/"
+        }
+
+        mavenCentral()
+        google()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url = uri('https://maven.pkg.jetbrains.space/public/p/compose/dev')
+        }
+        maven {
+            url = "https://maven.pkg.jetbrains.space/kotlin/p/kotlin/kotlin-js-wrappers"
+        }
+        maven{
+            url "https://raw.githubusercontent.com/cybernhl/maven-repository/master/"
+        }
+
+        mavenLocal()
+        maven {
+            url = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+        }
+    }
+}
+rootProject.name = "BLE"
+include ':common'
+include ':android'
+include ':desktop'
+//include ':jsApp'
+
+include ':Simulator'
+project(":Simulator").projectDir = file("./Simulator/app")
+include ':Parser'
+project(":Parser").projectDir = file("./Parser/bluetooth-gatt-parser")
+include ':Discover'
+project(":Discover").projectDir = file("./Discover/app")

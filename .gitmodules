@@ -1,0 +1,9 @@
+[submodule "Discover"]
+	path = Discover
+	url = git@github.com:cybernhl/Android-Bluetooth-Low-Energy.git
+[submodule "Simulator"]
+	path = Simulator
+	url = git@github.com:cybernhl/ble-test-peripheral-android.git
+[submodule "Parser"]
+	path = Parser
+	url = git@github.com:cybernhl/bluetooth-gatt-parser.git

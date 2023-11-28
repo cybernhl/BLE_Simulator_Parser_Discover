@@ -1,0 +1,63 @@
+[versions]
+kotlin-version = "1.9.20"
+org-jetbrains-kotlin-android = "1.9.20"
+agp-version = "7.3.0"#8.1.4
+core-ktx = "1.9.0"
+
+lifecycle-runtime-ktx = "2.6.2"
+activity-compose = "1.8.1"
+compose-bom = "2023.03.00"
+compose-version = "1.5.0"
+
+ktor-version = "2.3.5"
+koin-version = "3.4.0"
+
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp.version" }
+com-android-application = { id = "com.android.application", version.ref = "agp.version" }
+android-library = { id = "com.android.library", version.ref = "agp.version" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin.version" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin.version" }
+
+[libraries]
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor.version" }
+ktor-jvm = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor.version" }
+ktor-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor.version" }
+ktor-jsonjs = { module = "io.ktor:ktor-client-json-js", version.ref = "ktor.version" }
+ktor-ios = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor.version" }
+koinCore = { module = "io.insert-koin:koin-core", version.ref = "koin.version" }
+
+
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-core = { module = "androidx.core:core-ktx", version = "1.10.1" }
+
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }
+
+androidx-activity-compose = "androidx.activity:activity-compose:1.8.1"
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+
+
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+[bundles]
+
+
+
+
