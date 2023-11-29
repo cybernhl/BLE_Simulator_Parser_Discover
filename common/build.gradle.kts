@@ -102,10 +102,16 @@ kotlin {
 android {
     namespace = "com.neo.ble"
     compileSdk = 34
+    buildFeatures {
+        compose = true
+    }
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
         minSdk = 24
         targetSdk = 34
+    }
+    composeOptions {//Ref : https://androidx.dev/storage/compose-compiler/repository
+        kotlinCompilerExtensionVersion = "1.5.4"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

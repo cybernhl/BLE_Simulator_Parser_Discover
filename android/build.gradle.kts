@@ -6,8 +6,6 @@ plugins {
 //    alias(libs.plugins.org.jetbrains.kotlin.android)
 }
 
-
-
 android {
     namespace = "com.example.ble"
     compileSdk = 34
@@ -46,8 +44,8 @@ android {
             isMinifyEnabled = false
         }
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+    composeOptions {//Ref : https://androidx.dev/storage/compose-compiler/repository
+        kotlinCompilerExtensionVersion = "1.5.4"
     }
     packaging {
         resources {
