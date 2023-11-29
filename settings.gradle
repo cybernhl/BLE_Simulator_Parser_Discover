@@ -37,7 +37,7 @@ rootProject.name = "BLE"
 include ':common'
 include ':android'
 include ':desktop'
-//include ':jsApp'
+include ':jsApp'
 
 include ':Simulator'
 project(":Simulator").projectDir = file("./Simulator/app")

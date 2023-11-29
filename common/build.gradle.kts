@@ -20,9 +20,9 @@ kotlin {
             kotlinOptions.jvmTarget = "11"
         }
     }
-//    js(IR) {
-//        browser()
-//    }
+    js(IR) {
+        browser()
+    }
     ios()
     iosX64()
     iosArm64()
@@ -75,13 +75,13 @@ kotlin {
 
         val desktopTest by getting
 
-//        val jsMain by getting {
-//            dependencies {
-//                api(compose.html.core)
-//                implementation(libs.ktor.js)
-//                implementation(libs.ktor.jsonjs)
-//            }
-//        }
+        val jsMain by getting {
+            dependencies {
+                api(compose.html.core)
+                implementation(libs.ktor.js)
+                implementation(libs.ktor.jsonjs)
+            }
+        }
 
         val iosX64Main by getting
         val iosArm64Main by getting
