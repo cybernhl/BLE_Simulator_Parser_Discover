@@ -1,16 +1,23 @@
 [versions]
 kotlin-version = "1.9.20"
 org-jetbrains-kotlin-android = "1.9.20"
-agp-version = "7.3.0"#8.1.4
-core-ktx = "1.9.0"
+agp-version = "8.2.0"
+core-ktx = "1.12.0"
 
 lifecycle-runtime-ktx = "2.6.2"
 activity-compose = "1.8.1"
-compose-bom = "2023.03.00"
+compose-bom = "2023.08.00"
 compose-version = "1.5.0"
 
 ktor-version = "2.3.5"
 koin-version = "3.4.0"
+ktorfitLib = "1.10.2"
+kamelImage = "0.9.0"
+coroutines = "1.8.0-RC"
+settings = "1.1.1"
+datetime = "0.5.0"
+napierVersion = "2.6.1"
+kotlinxSerializationJson = "1.6.0"
 
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
@@ -31,9 +38,16 @@ ktor-jsonjs = { module = "io.ktor:ktor-client-json-js", version.ref = "ktor.vers
 ktor-ios = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor.version" }
 koinCore = { module = "io.insert-koin:koin-core", version.ref = "koin.version" }
 
+ktorfit-lib = { module = "de.jensklingenberg.ktorfit:ktorfit-lib", version.ref = "ktorfitLib" }
+json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+image = { module = "media.kamel:kamel-image", version.ref = "kamelImage" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+settings = { module = "com.russhwolf:multiplatform-settings", version.ref = "settings" }
+datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+log = { module = "io.github.aakira:napier", version.ref = "napierVersion" }
 
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
-androidx-core = { module = "androidx.core:core-ktx", version = "1.10.1" }
+androidx-core = { module = "androidx.core:core-ktx", version = "1.12.0" }
 
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }
 

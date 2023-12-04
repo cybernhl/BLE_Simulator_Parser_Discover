@@ -1,9 +1,9 @@
 import org.gradle.util.internal.VersionNumber
 buildscript {
     ext {
-        agp_gradle = '7.0.4'
+        agp_gradle = '8.2.0'
         android_gradle_plugin_version = agp_gradle
-        kotlin_version = "1.9.20"
+        kotlin_version = "1.9.0"
         // coroutine
         coroutine_version = "1.6.4"
         kotlin_coroutines_version = coroutine_version
@@ -106,8 +106,8 @@ buildscript {
 
 plugins {
     //https://developer.android.com/studio/build?hl=zh-tw#groovy
-    id 'com.android.application' version '8.1.4' apply false
-    id 'com.android.library' version '8.1.4' apply false
+    id 'com.android.application' version '8.2.0' apply false
+    id 'com.android.library' version '8.2.0' apply false
 //    alias(libs.plugins.android.application) apply false
 //    alias(libs.plugins.android.library) apply false
 
